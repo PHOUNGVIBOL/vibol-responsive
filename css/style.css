@@ -1,0 +1,454 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+aside{
+    background-color:#fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding:20px 0 0 20px;
+}
+.logo img, nav img,.profie-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.navegation{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+aside h5{
+    padding-left:20px;
+    margin:30px 0 30px 0;
+    font-size: 15px;
+} 
+.navegation:hover{
+    border-left:2px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+.left{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left p,p{
+    display: flex;
+    align-items: center;
+}
+.add{
+    background: rgb(207, 199, 199);
+    padding-right: 20px;
+    border-radius:30px;
+    background:rgb(181, 179, 179);
+    color: rgb(10, 8, 150);
+}
+.navegation i{
+    margin-right: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+.buy{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #000;
+    background-image: url(../image/logo.jpg);
+    background-size: cover;
+    height: 30vh;
+    border-radius:20px;
+    padding: 10px;
+    margin: 20px;
+}
+.buy button{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-radius:8px;
+    border:none;
+}
+main{
+    background-color:rgb(222, 222, 222);
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+.nav-item input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline:none;
+}
+.search{
+    width:40%;
+}
+.nav-item button{
+    padding: 4px 8px 4px 8px ;
+    border-radius: 20px;
+    border: none;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px 0 25px;
+}
+.section-1{
+    margin-top:-20px;
+}
+.sub-menu{
+    display: flex;
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+}
+.sMenu{
+    display: flex;
+    align-items: center;
+    border-radius:50px;
+    background-color:#fff;
+    padding: 10px;
+    margin-left:5px;
+    margin-top: 10px;
+}
+.sMenu img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.card-container{
+    display: grid;
+    gap: 35px;
+    margin: 10px 30px 10px 30px;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    background-color:#fff;
+    padding: 8px;
+    border-radius:10px;
+}
+.card-picture{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: flex-end;
+    background-image: url(../image/pic.png);
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-name,.title, .profie-items,.side-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-picture button{
+    padding: 8px;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+}
+.btn button{
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+.play i{
+    background: #fff;
+    border-radius: 50%;
+    padding: 6px;
+}
+.section-2{
+    margin: 30px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 5px;
+    border-radius:40px;
+}
+.option button{
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+}
+.profie-container{
+    background:#fff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.profie-items{
+    background: rgb(13, 138, 147);
+    border-radius: 20px;
+    padding: 10px;
+}
+.profie-name{
+    display: flex;
+    align-items: center;
+}
+.profie-items i,.side-right i{
+    font-size: 15px;
+}
+.side-right{
+    padding-right:30px;
+
+}
+.side-top{
+    background:#fff;
+    border-radius: 10px ;
+    padding: 10px;
+    margin-top:40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.side-name{
+    margin: 10px 0 20px 0;
+}
+.side-top button{
+    width: 100%;
+    padding: 8px;
+    color: blue;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.side-right img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.side-center{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 20px 0;
+}
+
+.all-profie{
+    background:#fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.all-profie .profie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.name2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.side-foot{
+    background:#fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.name3{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.picture1{
+    background:#fff;
+    width:45%;
+    height: auto;
+    padding:5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+}
+.picture1 .card{
+    background-image: url(../image/pic.png);
+    background-size: cover;
+    background-position:center;
+    height: 15vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 5px;
+}
+.picture1 h6{
+    margin-top: 5px;
+}
+.pic-both{
+    padding: 10px;
+}
+.more i{
+    background:#fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
+@media screen and (max-width:1000px) {
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navegation{
+        display: flex;
+        flex-direction:column;
+    }
+    aside h5,.buy,.all-profie{
+        display: none;
+    }
+    .container{
+        grid-template-columns:12fr
+    }
+    .sub-menu{
+        display: grid;grid-template-columns: repeat(3,1fr);
+    }
+    .profie-container{
+        display: grid;
+        grid-template-columns:2fr 2fr;
+    }
+    .side-right{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        grid-template-columns: 2fr 10fr;
+    }
+    .card-container{
+        grid-template-columns:1fr;
+    }
+    .side-left{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:600px) {
+    #close{
+        display: none;
+    }
+    body{
+        grid-template-columns:12fr;
+    }
+    .card-container{
+        grid-template-columns:1fr;
+    }
+    .side-left{
+        display: flex;
+        flex-direction: row;
+    }
+    aside{
+        order:1;
+    }
+    aside{
+        display: flex;
+    }
+}
+@media screen and (max-width:400px) {
+    /* .main-content{
+        margin-left: -10px;
+    } */
+    #close{
+        display: none;
+    }
+    .side-top{
+        width:47%;
+    }
+    .picture1{
+        width: 100%;
+    }
+    .sub-menu{
+        width: 50%;
+    }
+    .card-container{
+        grid-template-columns:1fr;
+        width: 50%;
+    }
+    .profie-container{
+        grid-template-columns:1fr;
+        width: 47%;
+        margin-bottom: -20px;
+    }
+    .side-foot{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    body{
+     grid-template-columns:1fr;
+    }
+    .card-container{
+        display: flex;
+        grid-template-columns:1fr;
+    }
+    .side-left{
+        display: flex;
+        flex-direction: row;
+    }
+    aside{
+        order:1;
+    }
+    aside{
+        display: flex;
+    }
+    .nav-item input{
+        width:50%;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    nav{
+        width:53%;
+    }
+    .sidebar-left{
+        width: 50%;
+    }
+    aside .navegation:hover{
+        border: none;
+        color: blue;
+        cursor: pointer;
+    }
+    
+}
